@@ -142,3 +142,10 @@ let arr2 = [...num1];
 
 arr2[0] = 20;
 console.log(num1);
+
+({ a, b, ...rest } = { a: true, b: 20, c: 30, d: 40 });
+console.log(a); // 10
+console.log(b); // 20
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof rest); // {c: 30, d: 4
